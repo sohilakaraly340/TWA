@@ -1,0 +1,10 @@
+[build]
+  command = "ng build --configuration production"
+  publish = "dist/twa"
+
+[functions]
+  node_bundler = "esbuild"
+
+[framework]
+  command = "npm run build"
+  name = "static"
