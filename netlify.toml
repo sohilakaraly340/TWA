@@ -1,0 +1,13 @@
+[build]
+  command = "ng build --configuration production"
+  publish = "dist/TWA"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
+  [plugins.inputs]
+    enabled = false
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
